@@ -7,19 +7,19 @@ export default function RootLayout() {
       {/* Para la maayoria de casos de uso Stack es mejor, porque ya tiene cierta estructura
           predefinida para volver hacia atras, animaciones como las nativas, etc */}
       <Stack
-      // screenOptions={{
-      //   headerTitle: "",
-      //   headerLeft: () => <Logo />,
-      //   headerRight: () => {
-      //     return (
-      //       <Link asChild href="/info">
-      //         <Pressable>
-      //           <InfoIcon size={40} color="black" />
-      //         </Pressable>
-      //       </Link>
-      //     );
-      //   },
-      // }}
+        screenOptions={{
+          headerTitle: "", // aca podria ir el titulo
+          // headerLeft: () => <Logo />,
+          // headerRight: () => {
+          //   return (
+          //     <Link asChild href="/info">
+          //       <Pressable>
+          //         <InfoIcon size={40} color="black" />
+          //       </Pressable>
+          //     </Link>
+          //   );
+          // },
+        }}
       />
       {/* <Slot /> -> se usa para mayor personalizacion entre las transiciones y demas*/}
     </View>
