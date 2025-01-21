@@ -10,7 +10,7 @@ const createDbIfNeeded = async (db: SQLiteDatabase) => {
   try {
     // Create a table and edit for create a migration way to create multiple tables
     const response = await db.execAsync(
-      "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, image TEXT)",
+      "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, image TEXT)"
     );
     console.log("Database created", response);
   } catch (error) {
@@ -24,7 +24,7 @@ export default function RootLayout() {
       <SQLiteProvider databaseName={DB_NAME} onInit={createDbIfNeeded}>
         <Stack
           screenOptions={{
-            headerTitle: "", // aca podria ir el titulo
+            headerTitle: "" // aca podria ir el titulo
             // headerLeft: () => <Logo />,
             // headerRight: () => {
             //   return (
@@ -42,7 +42,7 @@ export default function RootLayout() {
           <Stack.Screen
             name="modal"
             options={{
-              presentation: "modal",
+              presentation: "modal"
             }}
           />
         </Stack>

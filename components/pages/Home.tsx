@@ -3,7 +3,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from "react-native";
 import { Screen } from "../Screen";
 import { useCallback, useState } from "react";
@@ -33,10 +33,10 @@ export function HomePage() {
     <Screen style={styles.screen}>
       <Text style={styles.title}>DB TEST USERS:</Text>
       <FlatList
-      style={{width: "100%"}}
+        style={{ width: "100%" }}
         data={data}
         renderItem={({
-          item,
+          item
         }: {
           item: { id: number; name: string; email: string };
         }) => (
@@ -44,7 +44,7 @@ export function HomePage() {
             <View
               style={{
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-between"
               }}
             >
               <View>
@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
   },
   screen: {
     alignItems: "center",
-    alignContent: "center",
+    alignContent: "center"
   }
 });
