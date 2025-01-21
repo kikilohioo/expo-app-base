@@ -38,13 +38,6 @@ export default function RootLayout() {
           }}
         >
           <Stack.Screen name="(tabs)" />
-          <Stack.Screen name="+not-found" />
-          <Stack.Screen
-            name="modal"
-            options={{
-              presentation: "modal"
-            }}
-          />
         </Stack>
       </SQLiteProvider>
       <StatusBar style="auto" />
